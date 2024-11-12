@@ -12,3 +12,9 @@ public class JaggedArrayDemo {
 	}
 
 }
+
+
+/*A Jagged Array (also known as an array of arrays) in Java is a multidimensional 
+ * array where the inner arrays can have different lengths. 
+ * This is unlike a typical 2D array where each row has the same number of columns.
+ */

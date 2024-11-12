@@ -1,0 +1,27 @@
+package com.tns.ifet.daysix.exceptionhandling.nestedtrycatch;
+import java.util.*;
+public class NestedTryCatchDemo {
+
+	public static void main(String[] args) {
+		String name;
+		int pos;
+//		Scanner sc = new Scanner(System.in);
+		try (Scanner sc = new Scanner(System.in)) {
+			try {
+				System.out.println("Enter your name : ");
+				name = sc.next();
+				System.out.println("Enter the position : ");
+				pos = sc.nextInt();
+				try {
+					System.out.println("character at index " + pos + " in '" + name + "' is " + name.charAt(pos));
+				}
+				catch (StringIndexOutOfBoundsException e) {
+					System.err.println(e.getMessage());
+				}
+			} catch (InputMismatchException e) {
+				System.out.println("Please enter integer ");
+			}
+		}
+	}
+
+}
