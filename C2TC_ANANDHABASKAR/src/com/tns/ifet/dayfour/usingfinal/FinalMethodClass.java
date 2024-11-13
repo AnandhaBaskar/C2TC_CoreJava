@@ -1,6 +1,9 @@
+//Program to demonstrate final method 
 package com.tns.ifet.dayfour.usingfinal;
 
-public class FinalMethodClass {
+//class with final method
+class FinalMethodClass {
+	// constructor
 	FinalMethodClass() {
 		System.out.println("This is a default constructor");
 	}
@@ -11,5 +14,4 @@ public class FinalMethodClass {
 	final void show() {
 		System.out.println("Value of a: " + a);
 	}
-
 }
